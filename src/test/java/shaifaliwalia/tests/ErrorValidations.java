@@ -40,6 +40,7 @@ public class ErrorValidations extends BaseTest{
 		ConfirmationPage confirmationpage = orderplacingpage.selectcountry("India");
 		String text = confirmationpage.getconfirmationmessage();
 		Assert.assertEquals("THANKYOU FOR THE ORDER.", text);	
+//checking
 	}
 	
 	@Test(dependsOnMethods = {"placeorder1"})
